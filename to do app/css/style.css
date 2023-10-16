@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: 'Assistant', sans-serif; */
+    /* font-family: 'Bebas Neue', sans-serif; */
+    /* font-family: 'Cedarville Cursive', cursive; */
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Roboto Slab', serif; */
+    font-family: 'Space Grotesk', sans-serif;
+    color: #f9f9f9;
+    background-image: linear-gradient(120deg, #f6d365, #fda085);
+}
+
+header {
+    font-size: 1.5rem;
+}
+
+header,
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+}
+
+form input,
+form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background-color: white;
+}
+
+form button {
+    color: #d88771;
+    background: white;
+    cursor: pointer;
+    transform: all 0.3s ease;
+}
+
+form button:hover {
+    background-color: #d88771;
+    color: white;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    color: black;
+    background-color: white;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+    background-color:  #ff6f47;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.complete-btn{
+    background-color: rgb(75, 182, 75);
+}
+.active{
+    animation: error  0.5s infinite;
+    color: red;
+}
+@keyframes error {
+    10%{
+        transform: translateX(20%);
+    }
+    50%{
+        transform: translateX(-20%);
+        /* transform: matrix3d(40deg); */
+        color: red;
+    }
+}
+.todo-item{
+    padding: 0rem 0.5rem;
+}
