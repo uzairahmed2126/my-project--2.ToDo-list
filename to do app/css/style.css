@@ -74,30 +74,40 @@ form button:hover {
 
 .trash-btn,
 .complete-btn {
-    background-color:  #ff6f47;
+    background-color: #ff6f47;
     color: white;
     border: none;
     padding: 1rem;
     cursor: pointer;
     font-size: 1rem;
 }
-.complete-btn{
+
+.complete-btn {
     background-color: rgb(75, 182, 75);
 }
-.active{
-    animation: error  0.5s infinite;
+
+.active {
+    animation: error 0.5s infinite;
     color: red;
 }
+
 @keyframes error {
-    10%{
+    10% {
         transform: translateX(20%);
     }
-    50%{
+
+    50% {
         transform: translateX(-20%);
         /* transform: matrix3d(40deg); */
         color: red;
     }
 }
-.todo-item{
+
+.todo-item {
     padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check {
+    pointer-events: none;
 }
