@@ -4,6 +4,8 @@ const todoList = document.querySelector('.todo-list')
 const h1El = document.querySelector('h1')
 todoList.addEventListener('click', deleteCheck)
 todoButton.addEventListener('click', addBtn)
+const filterOption = document.querySelector('.filter-todo')
+filterOption.addEventListener('click',filterOpt)
 
 function addBtn(event) {
     event.preventDefault()
@@ -53,4 +55,8 @@ function deleteCheck(e) {
         const todo = item.parentElement
         todo.classList.toggle('completed')
     }
+}
+
+function filterOpt(e){
+console.log(e.target)
 }
